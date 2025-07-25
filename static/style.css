@@ -1,0 +1,194 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+
+
+}
+
+header {
+    height: 50vh;
+    background-color: #8B4B61;
+    width: 100vw;
+    margin: 0;
+    position: absolute;
+    bottom: 67%;
+    z-index: 0;
+    background-image: url(img/fundopc.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    clip-path: ellipse(90% 50% at 50% 50%)
+}
+
+#conteudo {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin-top: 60px;
+}
+
+#quadrado {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    align-items: center;
+    background-color: white;
+    width: 54.8vw;
+    height: 100vh;
+
+}
+
+#avatar {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    box-shadow: 5px -28px 76px 10px rgba(0, 0, 0, 0.55);
+    -webkit-box-shadow: 5px -28px 76px 10px rgba(0, 0, 0, 0.55);
+    -moz-box-shadow: 5px -28px 76px 10px rgba(0, 0, 0, 0.55);
+    object-fit: cover;
+    z-index: 1000000000000;
+
+}
+
+#title {
+    text-align: center;
+    font-size: 2.9rem;
+    font-family: 'Inter', sans-serif;
+    margin-top: 10px;
+    color: #B88C9B;
+    font-style: inherit;
+}
+
+#title2 {
+    text-align: center;
+    font-size: 1.8rem;
+    font-family: 'Inter', sans-serif;
+    color: #693949;
+
+}
+
+h3 {
+    text-align: center;
+    font-size: 1.4rem;
+    font-family: 'Inter', sans-serif;
+    margin-top: 20px;
+    color: rgb(0, 0, 0);
+}
+
+
+
+button {
+    margin: 12px;
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+}
+
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(0, 0, 0);
+    background-color: #FAAFC8;
+    border-radius: 12px;
+    width: 520px;
+    height: 70px;
+    font-family: 'Inter', sans-serif;
+    font-size: 25px;
+    transition: background-color 0.5s;
+    cursor: pointer;
+    text-decoration: none;
+    position: relative;
+    font-weight: bold;
+}
+
+a i {
+    margin-left: 20px;
+    font-size: 30px;
+    position: absolute;
+    right: 450px;
+    font-weight: bolder;
+}
+
+a:hover {
+    background-color: #ffdfea;
+}
+
+
+
+
+
+@media only screen and (max-width: 800px) {
+    #avatar {
+        width: 150px;
+        height: 150px;
+    }
+
+    a {
+        width: 300px;
+        height: 60px;
+        font-size: 19px;
+    }
+
+    a i {
+        margin-left: 20px;
+        font-size: 27px;
+        position: absolute;
+        right: 250px;
+    }
+
+    #title {
+        font-size: 2rem;
+        font-family: 'Inter', sans-serif;
+    }
+
+    #title2 {
+        text-align: center;
+        font-size: 1rem;
+        font-family: 'Inter', sans-serif;
+        color: #693949;
+
+    }
+
+    h3 {
+        text-align: center;
+        font-size: 1rem;
+        font-family: 'Inter', sans-serif;
+        margin-top: 20px;
+        color: rgb(0, 0, 0);
+    }
+
+    header {
+        width: 100vw;
+        bottom: 65%;
+        z-index: 0;
+        background-image: url(img/fundo.jpg);
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        clip-path: ellipse(90% 50% at 50% 50%)
+    }
+
+
+}
